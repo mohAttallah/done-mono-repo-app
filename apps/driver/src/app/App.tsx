@@ -11,6 +11,7 @@ import {
   Linking,
 } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
+import { Layout } from '@done/shared-ui-layout';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
@@ -18,6 +19,7 @@ export const App = () => {
 
   return (
     <>
+      <Layout />
       <StatusBar barStyle="dark-content" />
       <SafeAreaView
         style={{
@@ -31,6 +33,7 @@ export const App = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}
         >
+          { }
           <View style={styles.section}>
             <Text style={styles.textLg}>Hello there,</Text>
             <Text
@@ -38,7 +41,7 @@ export const App = () => {
               testID="heading"
               role="heading"
             >
-              Welcome Driver 👋
+              Welcome Driver 👋 XX
             </Text>
           </View>
           <View style={styles.section}>
